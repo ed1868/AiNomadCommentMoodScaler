@@ -271,7 +271,6 @@ def get_avg_scores_sorted(df):
 
 # Define our plotting function
 
-# https://seaborn.pydata.org/examples/kde_ridgeplot.html
 def get_avg_score_by_subreddit(dataframe):
     """
     Given a pandas DataFrame with columns "subreddit" and "score", returns a new DataFrame
@@ -334,4 +333,8 @@ collect_comments(
     max_comments_per_submission=MAX_COMMENTS_PER_SUBMISSION,
     max_comment_length=MAX_COMMENT_LENGTH,
     reddit=reddit,
+)
+df = score_sentiments(
+    filename=filename,
+    model=model,
 )
