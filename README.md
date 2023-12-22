@@ -28,10 +28,10 @@ This project performs sentiment analysis on comments from various subreddits. It
 
 
 ## Usage
-Set the target subreddits in the .env file.
-Run the main script:
-
-python main.py
+1. Set the target subreddits in the .env file.
+2. Run the main script:
+   ```bash
+   python main.py
 
 The script will fetch comments, perform sentiment analysis, and save the results in a CSV file. It will also generate visualizations of the sentiment scores.
 
